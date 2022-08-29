@@ -19,6 +19,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    width: 100%;
 }
 button {
     cursor: pointer;
@@ -29,7 +30,6 @@ button {
 .list {
     list-style: none;
 }
-
 *,
 *::before,
 *::after {

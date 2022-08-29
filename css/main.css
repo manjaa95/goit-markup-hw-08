@@ -21,6 +21,9 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 button {
@@ -43,16 +46,36 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .logo {
@@ -75,6 +98,14 @@ button {
 }
 
 .studio {
+  color: #FFFFFF;
+}
+
+.studio--color-black {
+  color: black;
+}
+
+.studio--color-white {
   color: #FFFFFF;
 }
 
@@ -140,6 +171,18 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__link:hover .social__icon, .social__link:focus .social__icon {
+  fill: #FFFFFF;
+}
+
+.social--margin-footer {
+  margin-left: 70px;
+}
+
+.social--margin-team {
+  margin-left: 0;
+}
+
+.social__icon--color-white {
   fill: #FFFFFF;
 }
 
@@ -305,7 +348,7 @@ button {
   width: 270px;
 }
 
-.inside__bg {
+.character__background {
   background: #F5F4FA;
   border-radius: 4px;
   width: 270px;
@@ -366,25 +409,46 @@ button {
 
 .card-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .card-list__item {
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
 }
-.card-list__item:nth-child(1n+1) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-list__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+  }
 }
 
 .card-list__name {
@@ -476,18 +540,38 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   padding-bottom: 30px;
 }
 
+.clients_item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .clients_item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients_item {
+    width: calc((100% - 150px) / 6);
+  }
+}
+
 .clients__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   background-color: #FFFFFF;
   border-radius: 100%;
@@ -498,6 +582,16 @@ button {
   justify-content: center;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 .clients__link:hover, .clients__link:focus {
   border-color: var(--brand-color);
@@ -558,11 +652,10 @@ button {
   align-items: baseline;
 }
 
-.socials {
+.social {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-left: 70px;
 }
 
 .social-menu__title {
@@ -576,7 +669,7 @@ button {
   margin-left: 70px;
 }
 
-.socials__link {
+.social__link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -587,7 +680,7 @@ button {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials__link:hover, .socials__link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--brand-color);
 }
 

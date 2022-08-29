@@ -37,11 +37,10 @@ transition: 250ms;
     display: flex;
     align-items: baseline;
 }
-.socials {
+.social {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-left: 70px;
 }
 .social-menu__title {
     font-weight: 700;
@@ -53,7 +52,7 @@ color: #FFFFFF;
 margin-bottom: 20px;
 margin-left: 70px;
 }
-.socials__link {
+.social__link {
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -64,7 +63,7 @@ margin-left: 70px;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
-&:focus {
+    &:focus {
     background-color: var(--brand-color);
 }
 }
@@ -83,8 +82,6 @@ margin-left: 70px;
 }
 .email__input {
     display: flex;
-    
-
 }
 .follow-block__title {
     font-weight: 700;
