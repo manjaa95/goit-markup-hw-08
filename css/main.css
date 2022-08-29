@@ -328,6 +328,18 @@ button {
 .character__list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .character__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .character__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .character__title {
@@ -338,6 +350,13 @@ button {
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .character__title {
+    justify-content: flex-start;
+  }
 }
 
 .character__text {
@@ -345,22 +364,49 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  width: 270px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .character__text {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .character__text {
+    width: 270px;
+  }
 }
 
 .character__background {
   background: #F5F4FA;
   border-radius: 4px;
-  width: 270px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .character__background {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .character__background {
+    width: 270px;
+  }
+}
 
 .work {
   padding-top: 0;
+}
+@media screen and (max-width: 1200px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__list {

@@ -1,6 +1,15 @@
 .character__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+}
+.character__item {
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+    }
 }
 .character__title {
     font-weight: 700;
@@ -10,21 +19,40 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #212121;
 margin-bottom: 10px;
+display: flex;
+justify-content: center;
+@media screen and (min-width: 768px) {
+    justify-content: flex-start;
+}
 }
 .character__text {
     font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--text-color);
-width: 270px;
+width: 450px;
+display: flex;
+justify-content: center;
+@media screen and (min-width: 768px) {
+    width: 354px;
+}
+@media screen and (min-width: 1200px) {
+    width: 270px;
+}
 }
 .character__background {
     background: #F5F4FA;
 border-radius: 4px;
-width: 270px;
+width: 450px;
 height: 120px;
 margin-bottom: 30px;
 display: flex;
 align-items: center;
 justify-content: center;
+@media screen and (min-width: 768px) {
+    width: 354px;
+}
+@media screen and (min-width: 1200px) {
+    width: 270px;
+}
 }
