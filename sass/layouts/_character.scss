@@ -1,0 +1,30 @@
+.character__list {
+    display: flex;
+    gap: 30px;
+}
+.character__title {
+    font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
+margin-bottom: 10px;
+}
+.character__text {
+    font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--text-color);
+width: 270px;
+}
+.inside__bg {
+    background: #F5F4FA;
+border-radius: 4px;
+width: 270px;
+height: 120px;
+margin-bottom: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+}

@@ -1,0 +1,28 @@
+.button {
+    display: flex;
+    background: var(--brand-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: 0;
+cursor: pointer;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+padding: 10px 32px;
+min-width: 200px;
+height: 50px;
+transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: #1e8ce6;
+    }
+}
+.input__icon {
+    align-self: center;
+    fill: #FFFFFF;
+    margin-left: 10px;
+}

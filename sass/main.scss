@@ -1,0 +1,22 @@
+@import './base/_base.scss';
+@import './base/container.scss';
+@import './base/section.scss';
+
+
+@import './components/logo.scss';
+@import './components/button.scss';
+@import './components/social.scss';
+@import './components/button-list.scss';
+
+@import './layouts/header.scss';
+@import './layouts/hero.scss';
+@import './layouts/character.scss';
+@import './layouts/work.scss';
+@import './layouts/team.scss';
+@import './layouts/table-list.scss';
+@import './layouts/clients.scss';
+@import './layouts/footer';
+@import './layouts/modal.scss';
+
+@import './utils/variables.scss';
+@import './utils/visually-hidden.scss';
