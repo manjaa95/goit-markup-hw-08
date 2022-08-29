@@ -477,23 +477,23 @@ button {
   gap: 30px;
 }
 
-.cards-item {
+.card {
   transform: relative;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cards-item:hover {
+.card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.cards-bot {
+.card__bot {
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   border-top: 0;
   padding: 20px 24px;
 }
 
-.cards-bot__title {
+.card-bot__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -502,19 +502,19 @@ button {
   margin-bottom: 4px;
 }
 
-.cards-bot__text {
+.card-bot__text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
-.cards-top {
+.card__top {
   position: relative;
   overflow: hidden;
 }
 
-.cards-top__text {
+.card__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -529,7 +529,7 @@ button {
   transition: transform 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cards-item:hover .cards-top__text {
+.cards-item:hover .card__text {
   transform: translateY(0);
 }
 
