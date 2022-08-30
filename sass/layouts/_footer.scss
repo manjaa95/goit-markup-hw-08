@@ -2,18 +2,35 @@
     background-color: var(--background-color);
     padding-top: 60px;
     width: 480px;
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: auto;
+    }
 }
 .footer-container {
     height: 603px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+        align-items: flex-start;
+        height: 463px;
+    }
+    @media screen and (min-width: 1200px) {
+        height: 252px;
+        align-items: baseline;
+    }
 }
 .contact-list {
     width: 231px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+    }
 }
 .contact-adress__item {
     margin-bottom: 9px;
@@ -40,16 +57,22 @@ transition: 250ms;
 }
 }
 /* footer soc menu */
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}
 .social-menu {
     display: flex;
     flex-direction: row;
     width: 231px;
+    height: 80px;
     flex-wrap: wrap;
     justify-content: center;
+    @media screen and (min-width: 768px) {
+        margin-left: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 206px;
+        margin-left: 70px;
+        justify-content: flex-start;
+        align-content: center;
+    }
 }
 .social {
     display: flex;
@@ -99,9 +122,22 @@ justify-content: center;
     height: 156px;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+        height: 86px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 93px;
+    }
 }
 .email__input {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: baseline;
+    }
 }
 .follow-block__title {
     font-weight: 700;
@@ -116,6 +152,9 @@ justify-content: center;
 }
 .modal-label {
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+    }
 }
 .email__modal {
     width: 450px;
@@ -133,5 +172,8 @@ transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:focus {
         border-color: var(--brand-color);
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
     }
 }

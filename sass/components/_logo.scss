@@ -20,10 +20,13 @@ color: var(--brand-color);
 .studio--color-black {
 color: black;
 }
-.logo__white {
+.logo--white {
     color: #FFFFFF;
     }
 .footer__logo {
 margin-bottom: 20px;
 text-align: center;
+@media screen and (min-width: 1200px) {
+    text-align: start;
+}
 }

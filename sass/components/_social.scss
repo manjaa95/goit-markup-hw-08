@@ -2,7 +2,13 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 30px;
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 30px;
+    }
 }
 .social__link {
     width: 44px;
@@ -30,6 +36,7 @@
 }
 .social--position__right {
     margin-left: 0;
+    margin-bottom: 0;
 }
 .social--position__left {
     margin-left: 0;
