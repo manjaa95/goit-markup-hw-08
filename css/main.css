@@ -337,11 +337,12 @@ button {
   justify-content: center;
   align-items: center;
   height: 600px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .hero__title {
   max-width: 696px;
-  font-weight: 900;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -350,6 +351,18 @@ button {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .character__list {
@@ -634,7 +647,7 @@ button {
 
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
@@ -643,6 +656,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
+    font-size: 36px;
     margin-bottom: 50px;
   }
 }
@@ -708,11 +722,11 @@ button {
 .footer {
   background-color: var(--background-color);
   padding-top: 60px;
-  width: 480px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .footer {
-    width: 768px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -848,7 +862,7 @@ button {
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 450px;
+  width: 100%;
   height: 156px;
   justify-content: center;
   align-items: center;
@@ -897,7 +911,7 @@ button {
 }
 
 .email__modal {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -913,6 +927,11 @@ button {
 }
 .email__modal:focus {
   border-color: var(--brand-color);
+}
+@media screen and (min-width: 768px) {
+  .email__modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .email__modal {

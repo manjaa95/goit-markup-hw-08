@@ -13,16 +13,25 @@
     justify-content: center;
     align-items: center;
     height: 600px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .hero__title {
     max-width: 696px;
     font-weight: 900;
-    font-weight: 900;
     font-size: 26px;
-    line-height: 1.62;
+line-height: 1.62;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+    font-size: 44px;
+line-height: 1.36;
+}
+@media screen and (min-width: 1200px) {
+    font-size: 44px;
+line-height: 1.36;
+}
 }
