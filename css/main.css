@@ -81,8 +81,8 @@ button {
 .logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: black;
 }
@@ -92,9 +92,14 @@ button {
 }
 
 .header__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+  padding-top: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 
 .studio {
@@ -248,17 +253,16 @@ button {
 
 .header__container {
   display: flex;
-  align-items: center;
 }
 
 .navigator__list {
-  display: flex;
+  display: none;
   gap: 50px;
   padding: 32px 0;
 }
 
 .contacts__list {
-  display: flex;
+  display: none;
   gap: 30px;
   padding: 32px 0;
   justify-content: flex-end;
@@ -321,6 +325,127 @@ button {
   background-color: var(--brand-color);
   bottom: 0;
   left: 0;
+}
+
+.menu-open {
+  padding-top: 10px;
+  margin-left: auto;
+  border: 0;
+  background-color: transparent;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0%;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.mob-menu > .mob-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-close-icon:hover {
+  fill: var(--brand-color);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-list {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.mob-menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-link:hover, .mob-menu-link:focus {
+  color: var(--brand-color);
+}
+
+.mob-contacts-list {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-bottom: 64px;
+}
+
+.mob-contacts-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mail-contacts-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-social-list {
+  display: flex;
+  gap: 20px;
+  margin-left: 40px;
+}
+
+.mob-social-item {
+  padding-right: 5px;
+  position: relative;
+}
+
+.mob-social-item:not(:last-child)::before {
+  content: "";
+  width: 22px;
+  height: 1px;
+  right: -20px;
+  bottom: 10px;
+  position: absolute;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+.mob-social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .hero {

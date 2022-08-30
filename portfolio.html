@@ -13,13 +13,13 @@
     <title>Портфоліо</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__container container">
+    <header class="header container">
+        <div class="header__container">
                 <div class="header__logo"><a class="logo link" href="index.html"><span class="web">Web</span>Studio</a></div>
             <nav class="navigator">
                 <div><ul class="navigator__list list">
-                <li class="navigator__item"><a class="navigator__link link" href="index.html">Студія</a></li>
-                <li class="navigator__item"><a class="navigator__link link active current" href="portfolio.html">Портфоліо</a></li>
+                <li class="navigator__item"><a class="navigator__link link active current" href="index.html">Студія</a></li>
+                <li class="navigator__item"><a class="navigator__link link" href="portfolio.html">Портфоліо</a></li>
                 <li class="navigator__item"><a class="navigator__link link" href="">Контакти</a></li>
             </ul></div>
             </nav>
@@ -37,6 +37,47 @@
                         </svg>
                         +38 096 111 11 11</a></li>
             </ul>
+            <button type="button" class="menu-open">
+                <svg class="menu-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu">
+            <div class="mob-container">
+                <div class="mob-menu-top">
+                    <button type="button" class="menu-close">
+                        <svg class="menu-close-icon" width="40" height="40">
+                            <use href="./images/icons.svg#icon-close-black-18dp"></use>
+                        </svg>
+                    </button>
+                    <nav class="mob-menu-nav">
+                        <div><ul class="mob-menu-list list">
+                        <li class="mob-menu-item"><a class="mob-menu-link link" href="index.html">Студія</a></li>
+                        <li class="mob-menu-item"><a class="mob-menu-link link" href="portfolio.html">Портфоліо</a></li>
+                        <li class="mob-menu-item"><a class="mob-menu-link link" href="">Контакти</a></li>
+                    </ul></div>
+                    </nav>
+                </div>
+                <div class="mob-menu-bot">
+                    <ul class="mob-contacts-list list">
+                        <li class="mob-contacts-item">
+                            <a class="mob-contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="mob-contacts-item">
+                            <a class="mail-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mob-social-list list">
+                        <li class="mob-social-item">
+                        <a class="mob-social-link link current-menu" href="">Instagram</a></li>
+                        <li class="mob-social-item">
+                        <a class="mob-social-link link current-menu" href="">Twitter</a></li>
+                        <li class="mob-social-item">
+                        <a class="mob-social-link link current-menu" href="">Facebook</a></li>
+                        <li class="mob-social-item">
+                        <a class="mob-social-link link" href="">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         </header>
     <main>
@@ -167,5 +208,6 @@
             </div>
     </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
