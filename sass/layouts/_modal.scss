@@ -10,8 +10,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     background-color: #FFFFFF;
     border-radius: 4px;
     position: absolute;
@@ -23,6 +23,10 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0);
+    }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        min-height: 581px;
     } 
 }
 .modal__close {
@@ -137,8 +141,8 @@ color: rgba(117, 117, 117, 0.5);
     margin-bottom: 30px;
 }
 .privacy__text {
-    font-size: 14px;
-line-height: 1.71;
+    font-size: 12px;
+line-height: 1.16;
 letter-spacing: 0.03em;
 color: #757575;
     display: flex;
@@ -161,6 +165,10 @@ color: #757575;
         color: transparent;
         transition: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
     }
 }
 .condition {

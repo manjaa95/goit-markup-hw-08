@@ -565,12 +565,14 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    font-size: 44px;
-    line-height: 1.36;
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -1171,8 +1173,8 @@ button {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #FFFFFF;
   border-radius: 4px;
   position: absolute;
@@ -1185,6 +1187,12 @@ button {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__close {
@@ -1311,8 +1319,8 @@ button {
 }
 
 .privacy__text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
@@ -1336,6 +1344,12 @@ button {
   color: transparent;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .privacy__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .condition {
