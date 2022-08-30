@@ -134,6 +134,7 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     @media screen and (min-width: 1200px) {
         flex-direction: row;
         align-items: baseline;
@@ -152,6 +153,11 @@ justify-content: center;
 }
 .modal-label {
     margin-bottom: 20px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    justify-content: center;
+    }
     @media screen and (min-width: 1200px) {
         margin-right: 12px;
     }

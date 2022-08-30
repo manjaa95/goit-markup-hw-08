@@ -243,6 +243,7 @@ button {
 
 .header {
   border-bottom: 1px solid #ECECEC;
+  height: 60px;
 }
 
 .header__container {
@@ -906,6 +907,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .email__input {
@@ -928,6 +930,13 @@ button {
 
 .modal-label {
   margin-bottom: 20px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .modal-label {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-label {
