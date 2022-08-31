@@ -885,7 +885,6 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  padding-bottom: 30px;
 }
 
 .clients_item {
