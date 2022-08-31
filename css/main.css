@@ -398,6 +398,7 @@ button {
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
+  z-index: 1;
 }
 .mob-menu > .mob-container {
   height: 100%;
