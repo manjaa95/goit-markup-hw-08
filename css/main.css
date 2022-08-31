@@ -859,12 +859,17 @@ button {
 @media screen and (min-width: 480px) {
   .card__text {
     font-size: 18px;
-    padding: 63px 24px;
+    padding: 77px 24px;
   }
 }
 @media screen and (min-width: 768px) {
   .card__text {
-    padding: 77px 24px;
+    padding: 49px 24px 77px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__text {
+    padding: 63px 24px;
   }
 }
 .card:hover .card__text {

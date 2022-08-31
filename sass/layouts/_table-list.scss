@@ -64,10 +64,13 @@ transition: transform 250ms linear;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 480px) {
   font-size: 18px;
-  padding: 63px 24px;
+  padding: 77px 24px;
 }
 @media screen and (min-width: 768px) {
-    padding: 77px 24px;
+    padding: 49px 24px 77px;
+}
+@media screen and (min-width: 1200px) {
+    padding: 63px 24px;
 }
 .card:hover & {
     transform: translateY(0);
