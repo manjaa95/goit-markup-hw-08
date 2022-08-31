@@ -455,6 +455,11 @@ button {
   color: var(--brand-color);
 }
 
+.current-mob {
+  content: "";
+  color: var(--brand-color);
+}
+
 .mob-contacts-list {
   display: flex;
   gap: 32px;
