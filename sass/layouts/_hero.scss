@@ -1,5 +1,5 @@
 .offerings {
-  background-image: url(../images/offerings/offerings-bg-mob.png);
+  background-image: url(..//images/offerings/offerings-bg-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -10,7 +10,7 @@
     (min-resolution: 2dppx) {
     background-image: linear-gradient
         (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/offerings/offerings-bg-mob-2x.png);
+      url(..//images/offerings/offerings-bg-mob-2x.png);
   }
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 192dpi),
@@ -19,10 +19,10 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/offerings/offerings-bg-mob-3x.png);
+      url(..//images/offerings/offerings-bg-mob-3x.png);
   }
   @media screen and (min-width: 768px) {
-    background-image: url(../images/offerings/offerings-bg-tablet.png);
+    background-image: url(..//images/offerings/offerings-bg-tablet.png);
   }
 }
 /* apple */
@@ -81,7 +81,7 @@
 .about__title__rocket::before {
   content: '';
   background: #ffffff;
-  background-image: url(../images/offerings/rocket.svg);
+  background-image: url(..//images/offerings/rocket.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 48px;
@@ -96,7 +96,7 @@
 .about__title__touch::before {
   content: '';
   background: #ffffff;
-  background-image: url(../images/offerings/touch.svg);
+  background-image: url(..//images/offerings/touch.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 48px;
@@ -137,7 +137,7 @@
   color: #000000;
 }
 .read-more::after {
-  content: url(../images/offerings/bird.svg);
+  content: url(..//images/offerings/bird.svg);
   margin-left: 7.75px;
 }
 
