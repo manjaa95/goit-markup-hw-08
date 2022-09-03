@@ -28,6 +28,19 @@
     background-image: url(..//images/offerings/offerings-bg-tablet-3x.png);
     }
   }
+  @media screen and (min-width: 1280px) {
+    background-image: url(..//images/offerings/bg-desktop-1x.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(..//images/offerings/bg-desktop-2x.png);
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(..//images/offerings/bg-desktop-3x.png);
+    }
+  }
 }
 /* apple */
 .apple {
@@ -49,6 +62,13 @@
     margin-right: 0;
     margin-top: 108px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 550px;
+    height: 550px;
+    margin-top: 151px;
+    margin-bottom: 43px;
+    margin-right: 90px;
+  }
 }
 .apple__item {
   width: 255.56px;
@@ -61,18 +81,36 @@
     width: 325.85px;
     height: 325.85px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 502px;
+    height: 502px;
+  }
 }
 .apple__picture {
   position: absolute;
   transform: translateY(-42px);
+  @media screen and (min-width: 768px) {
+    transform: translateY(-53px);
+  }
+  @media screen and (min-width: 1280px) {
+    transform: translateY(-78px);
+  }
 }
 .tablet-apple {
+@media screen and (min-width: 768px) {
 display: flex;
-align-items: center
+align-items: center;
+}
 }
 .shadow {
+  display: none;
+  @media screen and (min-width: 768px) {
   display: flex;
   width: 318px;
+}
+  @media screen and (min-width: 1280px) {
+  display: none;
+}
 }
 .shadow__list {
   display: flex;
@@ -185,6 +223,9 @@ align-items: center
   font-size: 13.6667px;
   line-height: 1.47;
   color: #000000;
+  @media screen and (min-width: 1280px) {
+  display: none;
+}
 }
 .read-more::after {
   content: url(..//images/offerings/bird.svg);
