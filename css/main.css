@@ -679,9 +679,6 @@ img {
   .apple__shadow {
     width: 163px;
     height: 56px;
-    z-index: 0;
-    background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
-    position: absolute;
     transform: translateY(236px);
     filter: blur(16.8764px);
   }
@@ -690,9 +687,6 @@ img {
   .apple__shadow {
     width: 252px;
     height: 87px;
-    z-index: 0;
-    background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
-    position: absolute;
     transform: translateY(364px);
     filter: blur(26px);
   }

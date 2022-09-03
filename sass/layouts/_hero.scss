@@ -104,27 +104,21 @@
 }
 .apple__shadow {
   width: 128px;
-    height: 44px;
+  height: 44px;
   z-index: 0;
   background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
   position: absolute;
   transform: translateY(185px);
   filter: blur(13.2364px);
   @media screen and (min-width: 786px) { 
-    width: 163px;
-    height: 56px;
-  z-index: 0;
-  background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
-  position: absolute;
+  width: 163px;
+  height: 56px;
   transform: translateY(236px);
   filter: blur(16.8764px);
 }
   @media screen and (min-width: 1280px) { 
-    width: 252px;
-    height: 87px;
-  z-index: 0;
-  background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
-  position: absolute;
+  width: 252px;
+  height: 87px;
   transform: translateY(364px);
   filter: blur(26px);
 }
