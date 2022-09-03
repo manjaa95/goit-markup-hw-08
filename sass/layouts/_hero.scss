@@ -42,6 +42,11 @@
     }
   }
 }
+.offerings__container {
+  @media screen and (min-width: 1280px) {
+  display: flex;
+  }
+}
 /* apple */
 .apple {
   display: flex;
@@ -107,6 +112,7 @@ align-items: center;
   @media screen and (min-width: 768px) {
   display: flex;
   width: 318px;
+  margin-bottom: 60px;
 }
   @media screen and (min-width: 1280px) {
   display: none;
@@ -117,6 +123,8 @@ align-items: center;
   gap: 44px;
   align-items: flex-end;
   margin-left: 29px;
+  position: absolute;
+  transform: translateY(-53px);
 }
 /* h2 p */
 .main {
@@ -142,6 +150,7 @@ align-items: center;
     font-size: 16px;
     line-height: 1.18;
     margin-bottom: 40px;
+    width: 500px;
   }
 }
 /* about */
