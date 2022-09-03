@@ -17,6 +17,16 @@
   }
   @media screen and (min-width: 768px) {
     background-image: url(..//images/offerings/offerings-bg-tablet.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(..//images/offerings/offerings-bg-tablet-2x.png);
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(..//images/offerings/offerings-bg-tablet-3x.png);
+    }
   }
 }
 /* apple */
@@ -32,6 +42,13 @@
   max-width: 100%;
   border-radius: 50%;
   border: 3px solid rgba(255, 255, 255, 0.5);
+  @media screen and (min-width: 768px) {
+    width: 357px;
+    height: 357px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 108px;
+  }
 }
 .apple__item {
   width: 255.56px;
@@ -40,10 +57,28 @@
   background: #fefefe;
   display: flex;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    width: 325.85px;
+    height: 325.85px;
+  }
 }
 .apple__picture {
   position: absolute;
   transform: translateY(-42px);
+}
+.tablet-apple {
+display: flex;
+align-items: center
+}
+.shadow {
+  display: flex;
+  width: 318px;
+}
+.shadow__list {
+  display: flex;
+  gap: 44px;
+  align-items: flex-end;
+  margin-left: 29px;
 }
 /* h2 p */
 .main {
@@ -52,11 +87,24 @@
 }
 .main__title {
   margin-bottom: 28px;
+  @media screen and (min-width: 786px) {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    width: 100%;
+    max-width: 526px;
+    margin-bottom: 20px;
+  }
 }
 .main__text {
   width: 100%;
   min-width: 272px;
   margin-bottom: 28px;
+  @media screen and (min-width: 786px) {
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 40px;
+  }
 }
 /* about */
 .about {
@@ -64,6 +112,11 @@
   flex-direction: column;
   gap: 28px;
   margin-bottom: 28px;
+  @media screen and (min-width: 786px) {
+    flex-direction: row;
+    gap: 116px;
+    margin-bottom: 40px;
+  }
 }
 .about__item {
   width: 100%;
@@ -107,6 +160,9 @@
   display: flex;
   gap: 24px;
   align-items: center;
+  @media screen and (min-width:768px) {
+    justify-content: flex-start;
+  }
 }
 .btn {
   width: 98px;
