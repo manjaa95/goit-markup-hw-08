@@ -18,6 +18,8 @@
     background-image: url(../images/offerings/offerings-bg-mob-3x.png);
   }
   @media screen and (min-width: 768px) {
+    position: relative;
+    transform: translateY(-85px);
     background-image: url(../images/offerings/offerings-bg-tablet.png);
     padding-top: 108px;
     padding-bottom: 43px;
@@ -298,10 +300,9 @@ align-items: flex-end;
 .btn--style {
   width: 106px;
   height: 40px;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 2px solid #7eb101;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms $timingFunction;
   &:hover,
   &:focus {
     border-color: #597D00;

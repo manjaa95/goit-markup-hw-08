@@ -563,6 +563,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .offerings {
+    position: relative;
+    transform: translateY(-85px);
     background-image: url(../images/offerings/offerings-bg-tablet.png);
     padding-top: 108px;
     padding-bottom: 43px;
@@ -915,7 +917,7 @@ img {
 .btn--style {
   width: 106px;
   height: 40px;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 2px solid #7eb101;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
