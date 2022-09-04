@@ -542,58 +542,71 @@ img {
 }
 
 .offerings {
-  background-image: url(..//images/offerings/offerings-bg-mob.png);
+  background-image: url(../images/offerings/offerings-bg-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 70px;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .offerings {
-    background-image: url(..//images/offerings/offerings-bg-mob-2x.png);
+    background-image: url(../images/offerings/offerings-bg-mob-2x.png);
   }
 }
 @media (min-device-pixel-ratio: 3), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .offerings {
-    background-image: url(..//images/offerings/offerings-bg-mob-3x.png);
+    background-image: url(../images/offerings/offerings-bg-mob-3x.png);
   }
 }
 @media screen and (min-width: 768px) {
   .offerings {
-    background-image: url(..//images/offerings/offerings-bg-tablet.png);
+    background-image: url(../images/offerings/offerings-bg-tablet.png);
+    padding-top: 108px;
+    padding-bottom: 43px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .offerings {
-    background-image: url(..//images/offerings/offerings-bg-tablet-2x.png);
+    background-image: url(../images/offerings/offerings-bg-tablet-2x.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .offerings {
-    background-image: url(..//images/offerings/offerings-bg-tablet-3x.png);
+    background-image: url(../images/offerings/offerings-bg-tablet-3x.png);
   }
 }
 @media screen and (min-width: 1280px) {
   .offerings {
-    background-image: url(..//images/offerings/bg-desktop-1x.png);
+    background-image: url(../images/offerings/bg-desktop-1x.png);
+    padding-bottom: 43px;
+    padding-top: 151px;
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .offerings {
-    background-image: url(..//images/offerings/bg-desktop-2x.png);
+    background-image: url(../images/offerings/bg-desktop-2x.png);
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 3), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .offerings {
-    background-image: url(..//images/offerings/bg-desktop-3x.png);
+    background-image: url(../images/offerings/bg-desktop-3x.png);
   }
 }
 
+.offerings__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media screen and (min-width: 1280px) {
   .offerings__container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 75px;
   }
 }
 
@@ -617,16 +630,14 @@ img {
     height: 357px;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 108px;
   }
 }
 @media screen and (min-width: 1280px) {
   .apple {
     width: 550px;
     height: 550px;
-    margin-top: 151px;
-    margin-bottom: 43px;
     margin-right: 90px;
+    margin-bottom: 0;
   }
 }
 
@@ -675,7 +686,7 @@ img {
   transform: translateY(185px);
   filter: blur(13.2364px);
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .apple__shadow {
     width: 163px;
     height: 56px;
@@ -696,6 +707,12 @@ img {
   .tablet-apple {
     display: flex;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .tablet-apple {
+    display: flex;
+    align-items: flex-end;
   }
 }
 
@@ -725,9 +742,25 @@ img {
 }
 
 /* h2 p */
+.desktop__about {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .desktop__about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 57px;
+  }
+}
 @media screen and (min-width: 1280px) {
   .desktop__about {
-    padding-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 57px;
   }
 }
 
@@ -738,14 +771,14 @@ img {
 
 .main__title {
   margin-bottom: 28px;
+  width: 280px;
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .main__title {
     font-weight: 700;
     font-size: 42px;
     line-height: 1.16;
-    width: 100%;
-    max-width: 526px;
+    width: 526px;
     margin-bottom: 20px;
   }
 }
@@ -756,11 +789,10 @@ img {
 }
 
 .main__text {
-  width: 100%;
-  min-width: 272px;
+  width: 272px;
   margin-bottom: 28px;
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .main__text {
     font-size: 16px;
     line-height: 1.18;
@@ -781,7 +813,7 @@ img {
   gap: 28px;
   margin-bottom: 28px;
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .about {
     flex-direction: row;
     gap: 116px;
@@ -797,12 +829,16 @@ img {
 }
 
 .about__item {
-  width: 100%;
-  min-width: 252px;
+  width: 252px;
+}
+@media screen and (min-width: 768px) {
+  .about__item {
+    width: 252px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .about__item {
-    max-width: 253px;
+    width: 253px;
   }
 }
 
@@ -818,7 +854,7 @@ img {
 .about__title__rocket::before {
   content: "";
   background: #ffffff;
-  background-image: url(..//images/offerings/rocket.svg);
+  background-image: url(../images/offerings/rocket.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 48px;
@@ -834,7 +870,7 @@ img {
 .about__title__touch::before {
   content: "";
   background: #ffffff;
-  background-image: url(..//images/offerings/touch.svg);
+  background-image: url(../images/offerings/touch.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 48px;
@@ -847,6 +883,21 @@ img {
   margin-bottom: 8px;
 }
 
+.about__text {
+  width: 252px;
+}
+@media screen and (min-width: 480px) {
+  .about__text {
+    width: 252px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__text {
+    width: 252px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 @media screen and (min-width: 1280px) {
   .about__text {
     font-size: 14px;
@@ -859,10 +910,18 @@ img {
   display: flex;
   gap: 24px;
   align-items: center;
+  width: 272px;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .btn-list {
     justify-content: flex-start;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .btn-list {
+    margin-bottom: 0;
   }
 }
 
@@ -900,7 +959,7 @@ img {
 }
 
 .read-more::after {
-  content: url(..//images/offerings/bird.svg);
+  content: url(../images/offerings/bird.svg);
   margin-left: 7.75px;
 }
 
